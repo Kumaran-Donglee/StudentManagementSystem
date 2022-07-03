@@ -11,15 +11,15 @@
     If your windows user please clone the project on c:/Xampp/htdocs or if your ubuntu user clone the project in opt/lampp/htdocs
 </p>
 
-<p align="center">
+<p>
     Please clone the project by using this cmd <strong>git clone https://github.com/Kumaran-Donglee/StudentManagementSystem.git</strong>
 </p>
 
-<p align="center">
+<p>
     After clone the project please copy the .env.example as .env file
 </p>
 
-<p align="center">
+<p>
     After clone the project please copy the .env.example as .env file
 </p>
 
