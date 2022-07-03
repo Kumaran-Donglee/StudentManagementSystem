@@ -31,6 +31,6 @@ class Students extends Model
     }
 
     public function marks(){
-        return $this->hasMany(StudentMarks::class, 'id', 'student_id');
+        return $this->hasMany(StudentMarks::class, 'student_id', 'id');
     }
 }

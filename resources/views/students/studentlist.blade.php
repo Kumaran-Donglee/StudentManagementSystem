@@ -56,10 +56,10 @@
                     </div>
                     <input type="hidden" name="student_id" id="student_id" value=""> 
                     <label><b>Student Name</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Student Name" id="student_name" name="student_name">
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Student Name" id="student_name" name="student_name" autocomplete="off">
                     <span id="student_name-name-error" style="color:red"></span>
                     <label><b>Student Age</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter Student Age" id="age" name="age">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter Student Age" id="age" name="age" autocomplete="off">
                     <span id="age-error" style="color:red"></span>
                     @isset($genders)
                         @foreach($genders as $gender)
@@ -100,7 +100,7 @@
                 @csrf
                 <div class="w3-section">
                     <label><b>Teacher Name</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Teacher Name" id="teacherName" name="name" required>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Teacher Name" id="teacherName" name="name" autocomplete="off" required>
                     <span id="teacher-name-error" style="color:red"></span>
                     <button class="w3-button w3-block w3-green w3-section w3-padding" id="createTeacher" type="submit">Create Teacher</button>
                 </div>

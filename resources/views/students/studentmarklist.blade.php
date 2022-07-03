@@ -60,7 +60,7 @@
                     <input type="hidden" name="student_mark_id" id="student_mark_id" value="">
                     <input type="hidden" name="total_mark" id="total_mark" value=""> 
                     <label><b>Student Name</b></label>
-                    <select class="w3-select w3-border w3-margin-bottom" id="student_id" name="student_id">
+                    <select class="w3-select w3-border w3-margin-bottom" id="student_id" name="student_id" autocomplete="off">
                         <option value="">Select Student Name</option>
                         @isset($students)
                             @foreach($students as $student)
@@ -69,11 +69,11 @@
                         @endisset
                     </select>
                     <label><b>Maths</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter maths" id="maths" name="maths">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter maths" id="maths" name="maths" autocomplete="off">
                     <label><b>Science</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter science" id="science" name="science">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter science" id="science" name="science" autocomplete="off">
                     <label><b>History</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter history" id="history" name="history">
+                    <input class="w3-input w3-border w3-margin-bottom" type="number" placeholder="Enter history" id="history" name="history" autocomplete="off">
                     <label><b>Student Term</b></label>
                     <select class="w3-select w3-border w3-margin-bottom" id="term" name="term_id">
                         <option value="">Select Term</option>
@@ -104,7 +104,7 @@
                 @csrf
                 <div class="w3-section">
                     <label><b>Term Name</b></label>
-                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Term Name" id="termName" name="term" required>
+                    <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter Term Name" id="termName" name="term" autocomplete="off" required>
                     <span id="term-name-error" style="color:red"></span>
                     <button class="w3-button w3-block w3-green w3-section w3-padding" id="createTeacher" type="submit">Create Term</button>
                 </div>
