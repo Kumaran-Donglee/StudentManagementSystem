@@ -47,7 +47,10 @@ $("#addStudent").click(function(){
     $("#student_id").val("");
     $("#student_name").val("");
     $("#age").val("");
-    $("input[name=gender_id][value=1]").attr('checked', true);
+    $("input:radio").attr("checked", false);
+    $("input[name=gender_id][value='1']").prop('checked', true);
+    $("input[name=gender_id][value='1']").attr('checked', true);
+    // $("input[name=gender_id][value=1]").attr('checked', true);
     $("#teacher_id").val("");
     $("#studentHeading").text("Create Student");
     $("#createTeacher").text("Create Student");
@@ -57,6 +60,8 @@ $("#addStudent").click(function(){
 $(document).on('click','.edit',function(){
     var id = $(this).data('id');
     console.log(id);
+    $("input:radio").attr("checked", false);
+    // $("input[name=gender_id][value='1']").attr('checked', true);
     if(id){
         $.get('/student/edit/'+id, function(data){ 
             console.log(data);
@@ -64,6 +69,7 @@ $(document).on('click','.edit',function(){
                 $("#student_id").val(data.data.id);
                 $("#student_name").val(data.data.student_name);
                 $("#age").val(data.data.age);
+                $("input[name=gender_id][value="+data.data.gender_id+"]").prop('checked', true);
                 $("input[name=gender_id][value="+data.data.gender_id+"]").attr('checked', true);
                 $("#teacher_id").val(data.data.teacher_id);
                 $("#studentHeading").text("Update Student");
