@@ -22,15 +22,18 @@
     After clone the project please copy the .env.example as .env file
 </p>
 
-<ul>
-    <li>In the env file i have my database credentials like below please the config your database credetials in the env file</li>
-    <li>DB_CONNECTION=mysql</li>
-    <li>DB_HOST=127.0.0.1</li>
-    <li>DB_PORT=3306</li>
-    <li>DB_DATABASE=StudentManageSystem</li>
-    <li>DB_USERNAME=root</li>
-    <li>DB_PASSWORD=</li>
+<p>
+    In the env file i have my database credentials like below please the config your database credetials in the env file
 </p>
+
+<pre>
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=StudentManageSystem
+    DB_USERNAME=root
+    DB_PASSWORD=
+</pre>
 
 <p>After config the env file we need to cache clear for that use this command <strong>php artisan cache:clear</strong></p>
 
