@@ -43,6 +43,6 @@
 
 <p>Now we can start our project by <strong>php artisan serve</strong></p>
 
-<p>Now our server will start at <a href="http://localhost:8080" target="_blank"><strong>http://localhost:8080</strong></a>. Use this url for our project.</p>
+<p>Now our server will start at <a href="http://localhost:8000" target="_blank"><strong>http://localhost:8080</strong></a>. Use this url for our project.</p>
 
 <p>Thank You</p>
